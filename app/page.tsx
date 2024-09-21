@@ -7,7 +7,7 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
-      <div className="flex h-20 shrink-0 items-end rounded-lg bg-red-900 p-4 md:h-52">
+      <div className="flex h-20 shrink-0 items-end rounded-lg bg-uiGreen-200 p-4 md:h-52">
         <AcmeLogo />
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
@@ -16,21 +16,17 @@ export default function Page() {
   className="relative w-0 h-0 border-l-[15px] border-r-[15px] border-b-[26px] border-l-transparent border-r-transparent border-b-black"
 />
           <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal ${lusitana.className} `}>
-            <strong>Welcome to Acme.</strong> This is the example for the{' '}
-            <a href="https://nextjs.org/learn/" className="text-red-900">
-              Next.js Learn Course
-            </a>
-            , brought to you by Vercel.
+            <strong>Welcome to BillFlow. <span className='text-uiGreen-200'></span>Your centralised Dashboard</strong> 
           </p>
           <Link
             href="/login"
-            className="flex items-center gap-5 self-start rounded-lg bg-red-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-red-700 md:text-base"
+            className="flex justify-center items-center gap-5 self-start rounded-lg bg-uiGreen-200 w-36 py-3 text-sm font-medium text-white transition-colors hover:bg-uiGreen-100 md:text-base"
           >
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
           <Link
             href="/dashboard"
-            className="flex items-center gap-5 self-start rounded-lg bg-red-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-red-700 md:text-base"
+            className="flex justify-center items-center gap-5 self-start rounded-lg bg-uiGreen-200 w-36 py-3 text-sm font-medium text-white transition-colors hover:bg-uiGreen-100 md:text-base"
           >
             <span>Dashboard</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
@@ -38,14 +34,14 @@ export default function Page() {
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
           <Image 
-            src='/hero-desktop.png'
+            src='/dashboard-desktop.png'
             alt='desktop image'
             width={1000}
             height={760}
             className='hidden md:block'
             priority={true} />
           <Image
-            src='/hero-mobile.png'
+            src='/dashboard-mobile.png'
             alt='mobile image'
             width={560}
             height={620}

@@ -10,21 +10,6 @@ import { LatestInvoicesSkeleton,
 
 
 export default async function Page() {
-  // const revenue = await fetchRevenue()
-  // const latestInvoices = await fetchLatestInvoices()
-  // const { 
-  //   totalPaidInvoices, 
-  //   totalPendingInvoices, 
-  //   numberOfInvoices, 
-  //   numberOfCustomers
-  // } = await fetchCardData()
-
-  // const data = await Promise.all([fetchRevenue, fetchLatestInvoices, fetchCardData]);
-  // console.log(data.entries())
-
-  // console.log("Revenue:", revenue)
-  // console.log("Latest Invoices:",latestInvoices)
-
   return (
     <main>
       <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>Dashboard</h1>

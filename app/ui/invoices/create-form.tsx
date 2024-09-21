@@ -5,7 +5,7 @@ import {
   ClockIcon,
   CurrencyDollarIcon,
   UserCircleIcon,
-} from '@heroicons/react/24/outline';
+} from '@heroicons/react/24/solid';
 import { Button } from '@/app/ui/button';
 import { createInvoice } from "@/app/lib/actions";
 
