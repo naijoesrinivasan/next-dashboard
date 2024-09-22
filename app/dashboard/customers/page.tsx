@@ -1,13 +1,15 @@
 import { fetchAllCustomers } from "@/app/lib/data";
 import CustomersTable from "@/app/ui/customers/table";
+import { Suspense } from "react";
 
 
 export default async function Page()  {
-  const customers = await fetchAllCustomers()
 
   return (
     <section className="">
-      <CustomersTable customers={customers}/>
+      <Suspense fallback={<h1>Loading customers</h1>}>
+        <CustomersTable />
+      </Suspense>
     </section>
   )
 }

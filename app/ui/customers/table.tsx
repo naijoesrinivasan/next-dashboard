@@ -4,12 +4,10 @@ import Search from '@/app/ui/search';
 import {
   FormattedCustomersTable,
 } from '@/app/lib/definitions';
+import { fetchAllCustomers } from '@/app/lib/data';
 
-export default async function CustomersTable({
-  customers,
-}: {
-  customers: FormattedCustomersTable[];
-}) {
+export default async function CustomersTable() {
+  const customers = await fetchAllCustomers()
   return (
     <div className="w-full">
       <h1 className={`${lusitana.className} mb-8 text-xl md:text-2xl`}>
